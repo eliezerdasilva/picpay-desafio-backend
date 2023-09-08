@@ -1,9 +1,8 @@
-package br.desafiopicpay.controllers;
+package br.desafiopicpay.models;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import br.desafiopicpay.models.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,6 +13,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity(name="transactions")
@@ -21,6 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
 public class Transaction {
 	
